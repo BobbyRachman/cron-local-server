@@ -1,0 +1,214 @@
+var express = require('express')
+var con = require('../../../config/db')
+var request = require('request')
+var cron = require('node-cron')
+var SqlQuery = require('../../helper/Query')
+var BlModel = require('../model/BukalapakModel')
+
+function escapeHtml(text) {
+  return text
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+}
+
+function addslashes( str ) {  
+  return (str+'').replace(/([\\"'])/g, "\\$1").replace(/\0/g, "\\0");  
+} 
+
+function clean(data) {
+  data = data.trim()
+  data = data.replace(/\\/g, '')
+  data = escapeHtml(data)
+  data = addslashes(data)
+  return data
+}
+
+async function getIntervalDate(sd,ed,now) {
+  try {
+    let diff = Math.floor((datenow.getTime() - sd.getTime()) / (1000 * 60 * 60))
+    
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+// */10 * * * * * = jalan per 10 detik
+// */10 * * * * = jalan per 10 menit
+
+module.exports = cron.schedule('*/10 * * * * *',async ()=>{
+  try {
+    let shop = await SqlQuery(BlModel.GetShopBukalapak)
+    shop.forEach(async (shops) => {
+      // // Insert ke cron log
+      // let InsertCron = await SqlQuery(BlModel.InsertToCronLog(shops.fk_brand))
+      // // Ambil id cron log
+      // let idcron = InsertCron.insertId
+
+      //Alg init
+      let queryStartDate = await SqlQuery(BlModel.GetCreateDateByBrand(shops.fk_brand))
+      var sd = queryStartDate[0].create_date
+      var ed = new Date();
+      var datenow = new Date();
+      var diff = Math.floor((datenow.getTime() - sd.getTime()) / (1000 * 60 * 60))
+      var limit = 0;
+      var offset = 0;
+      var ct = 0;
+      var cy = 0;
+      var cn = 0;
+      if (diff >= 24) {
+        // Alg 2
+        let queryCron = await SqlQuery(BlModel.GetSdEdCronLog(shops.fk_brand))
+        let sd_cron = queryCron[0].start_date
+        let getEd = new Date(sd_cron) //sd_cron + 1h
+  
+        if (sd.getTime() <= sd_cron.getTime()) {
+          //Alg 4
+          sd = sd_cron // = sd_cron
+          ed = new Date(getEd.setDate(getEd.getDate() + 1)) // = (sd_cron + 1)
+          if(ed > datenow){
+            // Alg 6
+            ed = datenow
+          }
+        } else {
+          // Alg 5
+          let getSd = new Date(sd)
+          ed = new Date(getSd.setDate(getSd.getDate()+1)) //get Date from lastrow + 1d
+          if(ed > datenow){
+            // Alg 6
+            ed = datenow
+          }
+        }
+      } else {
+        //Alg 3
+        ed = new Date()
+      }
+
+      // let startDate = sd.toISOString().split('T')[0]
+      let startDate = sd.toISOString()
+      // let endDate = ed.toISOString().split('T')[0]
+      let endDate = ed.toISOString()
+      
+      // Request API untuk get All Order
+      var options = {
+        'method': 'GET',
+        'url': 'https://erp.egogohub.com/cron/sync_bukalapak_so.php?act=getAllOrdersPerShop&sd='+startDate+'&ed='+endDate+'&offset='+offset+'&limit='+limit+'&shopid='+shops.shopid+'',
+      };
+      
+      request(options, function (error, response, body) {
+        if (error) throw new Error(error);
+        let result = JSON.parse(body);
+        let http_sts = result.info.http_code != undefined ? result.info.http_code : 0;
+        let ResponseData = result.response.data;
+        if(ResponseData != undefined){
+          var cres = ResponseData.length
+          while (cres > 0) {
+            ResponseData.forEach(data => {
+              let orderId = data.id; 
+              let salesorder_no = data.transaction_id;
+              // let create_date = new Date(data.created_at);
+              let create_date = data.created_at;
+              // let payment_date = data.state_changed_at.paid_at != '' ? new Date(data.state_changed_at.paid_at) : null;
+              let payment_date = data.state_changed_at.paid_at != '' ? data.state_changed_at.paid_at : null;
+              // let delivery_date = data.state_changed_at.delivered_at != '' ? new Date(data.state_changed_at.delivered_at) : null;
+              let delivery_date = data.state_changed_at.delivered_at != '' ? data.state_changed_at.delivered_at : null;
+              // let completion_date = data.state == 'remitted' || data.state == 'refunded' || data.state == 'cancelled' ? new Date(data.updated_at) : null;
+              let completion_date = data.state == 'remitted' || data.state == 'refunded' || data.state == 'cancelled' ? data.updated_at : null;
+              let customer_name = clean(data.buyer.name);
+              let customer_phone = data.buyer.phone;
+              let customer_email = '';
+              let sub_total = 0;
+              let shipping_cost = data.amount.seller.details.delivery;
+              let insurance_cost = data.amount.seller.details.insurance;
+              let grand_total = data.amount.seller.total;
+              let recipient_name = clean(data.delivery.consignee.name);
+              let recipient_phone = data.delivery.consignee.phone;
+              let shipping_address =clean(data.delivery.consignee.address);
+              let shipping_area = clean(data.delivery.consignee.district);
+              let shipping_city = clean(data.delivery.consignee.city);
+              let shipping_province = clean(data.delivery.consignee.province);
+              let shipping_post_code = data.delivery.consignee.postal_code;
+              let shipping_country = clean(data.delivery.consignee.country);
+              let shipper = data.delivery.carrier;
+              let tracking_no = data.delivery.tracking_number;
+              let channel_status = data.state;
+              let internal_status = channel_status == 'pending' ? 'DRAFT' : channel_status == 'paid' ? 'VALIDATED' : channel_status == 'accepted' ? 'PROCESSED' : channel_status == 'delivered' ? 'SHIPPING' : channel_status == 'received' ? 'DELIVERED' : channel_status == 'remitted' ? 'COMPLETED' : channel_status == 'refunded' ? 'REFUNDED' : 'CANCELED';
+              let payment_method = data.payment_method;
+              let cancel_by = data.state_changed_by.cancelled_by != null ? data.state_changed_by.cancelled_by : '';
+              let cancel_reason = cancel_by != '' ? 'Canceled by buyer' : '';
+              let cancel_reason_detail = data.options.cancel_reason != undefined ? data.options.cancel_reason : data.options.reject_reason != undefined ?  data.options.reject_reason : '';
+    
+              let subtotal2 = 0
+              data.items.forEach(item =>{
+                let total2 = item.price * item.quantity;
+                subtotal2 += total2;
+              })
+    
+              // Get Single Order
+              var options2 = {
+                'method': 'GET',
+                'url': 'https://apimp.egogohub.tech/sync_bukalapak_so.php?act=getSingleOrderItem&shopid='+shops.shopid+'&orderid='+orderId+'',
+              }
+    
+              request(options2, async function (error, response,body) {
+                try {
+                  if (error) throw new Error(error);
+                  let result2 = JSON.parse(body);
+                  let ResponseData2 = result2.response.data;
+                  
+                  ResponseData2.items.forEach(async(items2) =>{
+                    let notes = ResponseData2.options.buyer_note != undefined ? ResponseData2.options.buyer_note : '';
+                    let item_code = items2.stuff.id;
+                    let item_sku = items2.stuff.sku_name;
+                    let item_name = items2.stuff.variant_name != '' ? items2.name+' '+items2.stuff.variant_name :  items2.name;
+                    let srp = items2.product.price;
+                    let price = items2.price;
+                    let qty = items2.quantity;
+                    let total = price * qty;
+                    sub_total += total;
+    
+                    let q1 = await SqlQuery(BlModel.ReplaceEgogoSalesDet1(orderId,salesorder_no,shops.fk_brand,notes,item_code,item_sku,item_name,srp,price,qty,total,1,shops.shopid)); 
+                  })
+    
+                  let q2 = await SqlQuery(BlModel.ReplaceEgogoSalesDet2(orderId,salesorder_no,shops.fk_brand,13,create_date,payment_date,delivery_date,completion_date,customer_name,customer_phone,customer_email,sub_total,shipping_cost,insurance_cost,grand_total,recipient_name,recipient_phone,shipping_address,shipping_area,shipping_city,shipping_province,shipping_post_code,shipping_country,shipper,tracking_no,channel_status,internal_status,cancel_reason,cancel_reason_detail,1,payment_method,shops.shopid)); 
+                  // if(!q2) console.log(BlModel.ReplaceEgogoSalesDet2(orderId,salesorder_no,shops.fk_brand,13,create_date,payment_date,delivery_date,completion_date,customer_name,customer_phone,customer_email,sub_total,shipping_cost,insurance_cost,grand_total,recipient_name,recipient_phone,shipping_address,shipping_area,shipping_city,shipping_province,shipping_post_code,shipping_country,shipper,tracking_no,channel_status,internal_status,cancel_reason,cancel_reason_detail,1,payment_method,shops.shopid))
+                  if(!q2){
+                    cn++
+                  } else {
+                    cy++
+                  }
+    
+                  // console.log(create_date)
+                  
+                  // let notes = ResponseData2.options.buyer_note != undefined ? ResponseData2.options.buyer_note : '';
+                  // let item_code = ResponseData2.id;
+                  // let item_sku = ResponseData2.items.length;
+                  // // let item_name = ResponseData2.items.stuff.variant_name;
+                  // // let srp = ResponseData2.items.product.price;
+                  // // let price = ResponseData2.items.price;
+                  // // let qty = ResponseData2.items.quantity;
+                  // // let total = price * qty
+    
+                  // console.log(item_sku)
+                  // 
+                } catch (error) {
+                  console.log(error)
+                }
+              });
+            });
+          }
+        } else {
+          console.log("Sync Bukalapak Failed")
+        }
+      });
+        
+
+
+    });
+    // console.log("Kelar Looping")
+  } catch (error) {
+    throw error;
+  }
+})

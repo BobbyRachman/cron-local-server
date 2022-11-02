@@ -1,0 +1,779 @@
+[
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "CANCELED",
+    "mp": "tokopedia",
+    "mp_status": "0",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "CANCELED",
+    "mp": "tokopedia",
+    "mp_status": "2",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "CANCELED",
+    "mp": "tokopedia",
+    "mp_status": "3",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "CANCELED",
+    "mp": "tokopedia",
+    "mp_status": "4",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "CANCELED",
+    "mp": "tokopedia",
+    "mp_status": "5",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "CANCELED",
+    "mp": "tokopedia",
+    "mp_status": "6",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "CANCELED",
+    "mp": "tokopedia",
+    "mp_status": "10",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "CANCELED",
+    "mp": "tokopedia",
+    "mp_status": "699",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "CANCELED",
+    "mp": "tokopedia",
+    "mp_status": "15",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "DRAFT",
+    "mp": "tokopedia",
+    "mp_status": "11",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "DRAFT",
+    "mp": "tokopedia",
+    "mp_status": "100",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "DRAFT",
+    "mp": "tokopedia",
+    "mp_status": "103",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "VALIDATED",
+    "mp": "tokopedia",
+    "mp_status": "200",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "VALIDATED",
+    "mp": "tokopedia",
+    "mp_status": "220",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "VALIDATED",
+    "mp": "tokopedia",
+    "mp_status": "221",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "PROCESSED",
+    "mp": "tokopedia",
+    "mp_status": "400",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "PROCESSED",
+    "mp": "tokopedia",
+    "mp_status": "450",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "SHIPPING",
+    "mp": "tokopedia",
+    "mp_status": "500",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "SHIPPING",
+    "mp": "tokopedia",
+    "mp_status": "501",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "SHIPPING",
+    "mp": "tokopedia",
+    "mp_status": "520",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "SHIPPING",
+    "mp": "tokopedia",
+    "mp_status": "530",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "SHIPPING",
+    "mp": "tokopedia",
+    "mp_status": "540",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "RETURNED",
+    "mp": "tokopedia",
+    "mp_status": "550",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "DELIVERED",
+    "mp": "tokopedia",
+    "mp_status": "600",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "DELIVERED",
+    "mp": "tokopedia",
+    "mp_status": "601",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "DELIVERED",
+    "mp": "tokopedia",
+    "mp_status": "690",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "DELIVERED",
+    "mp": "tokopedia",
+    "mp_status": "691",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "DELIVERED",
+    "mp": "tokopedia",
+    "mp_status": "695",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "DELIVERED",
+    "mp": "tokopedia",
+    "mp_status": "698",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "COMPLETED",
+    "mp": "tokopedia",
+    "mp_status": "700",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "COMPLETED",
+    "mp": "tokopedia",
+    "mp_status": "701",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "CANCELED",
+    "mp": "shopee",
+    "mp_status": "CANCELLED",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "SHIPPING",
+    "mp": "shopee",
+    "mp_status": "RETRY_SHIP",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "DRAFT",
+    "mp": "shopee",
+    "mp_status": "UNPAID",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "PROCESSED",
+    "mp": "shopee",
+    "mp_status": "PROCESSED",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "CANCELED",
+    "mp": "shopee",
+    "mp_status": "IN_CANCEL",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "VALIDATED",
+    "mp": "shopee",
+    "mp_status": "READY_TO_SHIP",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "COMPLETED",
+    "mp": "shopee",
+    "mp_status": "COMPLETED",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "SHIPPING",
+    "mp": "shopee",
+    "mp_status": "SHIPPED",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "RETURNED",
+    "mp": "shopee",
+    "mp_status": "TO_RETURN",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "DELIVERED",
+    "mp": "shopee",
+    "mp_status": "TO_CONFIRM_RECEIVE",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "CANCELED",
+    "mp": "blibli",
+    "mp_status": "X",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "CANCELED",
+    "mp": "blibli",
+    "mp_status": "FC",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "CANCELED",
+    "mp": "blibli",
+    "mp_status": "CR",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "DRAFT",
+    "mp": "blibli",
+    "mp_status": "SF",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "DRAFT",
+    "mp": "blibli",
+    "mp_status": "FP",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "VALIDATED",
+    "mp": "blibli",
+    "mp_status": "C",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "VALIDATED",
+    "mp": "blibli",
+    "mp_status": "RTS",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "PROCESSED",
+    "mp": "blibli",
+    "mp_status": "PC",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "PROCESSED",
+    "mp": "blibli",
+    "mp_status": "PU",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "PROCESSED",
+    "mp": "blibli",
+    "mp_status": "BP",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "PROCESSED",
+    "mp": "blibli",
+    "mp_status": "PF",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "PROCESSED",
+    "mp": "blibli",
+    "mp_status": "OoS",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "SHIPPING",
+    "mp": "blibli",
+    "mp_status": "CX",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "SHIPPING",
+    "mp": "blibli",
+    "mp_status": "DF",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "RETURNED",
+    "mp": "blibli",
+    "mp_status": null,
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "DELIVERED",
+    "mp": "blibli",
+    "mp_status": null,
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "COMPLETED",
+    "mp": "blibli",
+    "mp_status": "D",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "REFUNDED",
+    "mp": "blibli",
+    "mp_status": null,
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "CANCELED",
+    "mp": "bukalapak",
+    "mp_status": "rejected",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "CANCELED",
+    "mp": "bukalapak",
+    "mp_status": "cancelled",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "CANCELED",
+    "mp": "bukalapak",
+    "mp_status": "expired",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "DRAFT",
+    "mp": "bukalapak",
+    "mp_status": "pending",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "VALIDATED",
+    "mp": "bukalapak",
+    "mp_status": "paid",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "PROCESSED",
+    "mp": "bukalapak",
+    "mp_status": "accepted",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "PROCESSED",
+    "mp": "bukalapak",
+    "mp_status": "processed",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "SHIPPING",
+    "mp": "bukalapak",
+    "mp_status": "delivered",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "RETURNED",
+    "mp": "bukalapak",
+    "mp_status": "return",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "DELIVERED",
+    "mp": "bukalapak",
+    "mp_status": "received",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "COMPLETED",
+    "mp": "bukalapak",
+    "mp_status": "remitted",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "REFUNDED",
+    "mp": "bukalapak",
+    "mp_status": "refunded",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "CANCELED",
+    "mp": "jdid",
+    "mp_status": "5",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "DRAFT",
+    "mp": "jdid",
+    "mp_status": null,
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "VALIDATED",
+    "mp": "jdid",
+    "mp_status": "1",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "VALIDATED",
+    "mp": "jdid",
+    "mp_status": "3",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "VALIDATED",
+    "mp": "jdid",
+    "mp_status": "4",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "PROCESSED",
+    "mp": "jdid",
+    "mp_status": "7",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "SHIPPING",
+    "mp": "jdid",
+    "mp_status": "2",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "RETURNED",
+    "mp": "jdid",
+    "mp_status": null,
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "DELIVERED",
+    "mp": "jdid",
+    "mp_status": null,
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "COMPLETED",
+    "mp": "jdid",
+    "mp_status": "6",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "REFUNDED",
+    "mp": "jdid",
+    "mp_status": null,
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "CANCELED",
+    "mp": "lazada",
+    "mp_status": "canceled",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "CANCELED",
+    "mp": "lazada",
+    "mp_status": "failed",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "CANCELED",
+    "mp": "lazada",
+    "mp_status": "package_scrapped",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "DRAFT",
+    "mp": "lazada",
+    "mp_status": "unpaid",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "VALIDATED",
+    "mp": "lazada",
+    "mp_status": "pending",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "PROCESSED",
+    "mp": "lazada",
+    "mp_status": "ready_to_ship",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "PROCESSED",
+    "mp": "lazada",
+    "mp_status": "processed",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "PROCESSED",
+    "mp": "lazada",
+    "mp_status": "packed",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "SHIPPING",
+    "mp": "lazada",
+    "mp_status": "damaged_by_3pl",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "SHIPPING",
+    "mp": "lazada",
+    "mp_status": "lost_by_3pl",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "SHIPPING",
+    "mp": "lazada",
+    "mp_status": "shipped",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "SHIPPING",
+    "mp": "lazada",
+    "mp_status": "shipped_back",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "RETURNED",
+    "mp": "lazada",
+    "mp_status": "returned",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "DELIVERED",
+    "mp": "lazada",
+    "mp_status": null,
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "COMPLETED",
+    "mp": "lazada",
+    "mp_status": "delivered",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "COMPLETED",
+    "mp": "lazada",
+    "mp_status": "shipped_back_success",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "REFUNDED",
+    "mp": "lazada",
+    "mp_status": "refund",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "CANCELED",
+    "mp": "zalora",
+    "mp_status": "canceled",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "CANCELED",
+    "mp": "zalora",
+    "mp_status": "failed",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "DRAFT",
+    "mp": "zalora",
+    "mp_status": null,
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "VALIDATED",
+    "mp": "zalora",
+    "mp_status": "pending",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "VALIDATED",
+    "mp": "zalora",
+    "mp_status": "ready_to_ship",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "PROCESSED",
+    "mp": "zalora",
+    "mp_status": "processing",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "SHIPPING",
+    "mp": "zalora",
+    "mp_status": "shipped",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "RETURNED",
+    "mp": "zalora",
+    "mp_status": "returned",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "DELIVERED",
+    "mp": "zalora",
+    "mp_status": null,
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "COMPLETED",
+    "mp": "zalora",
+    "mp_status": "return_rejected",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "COMPLETED",
+    "mp": "zalora",
+    "mp_status": "delivered",
+    "notes": null
+  },
+  {
+    "createdAt": "31/12/2021 07:00:00",
+    "internal_status": "REFUNDED",
+    "mp": "zalora",
+    "mp_status": null,
+    "notes": null
+  }
+]

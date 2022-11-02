@@ -1,0 +1,884 @@
+[
+  {
+    "mp": "blibli",
+    "shipper_internal": "JNE",
+    "shipper_mp": "JNE Cashless",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "JNE",
+    "shipper_mp": "JNE Pickup",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "JNE",
+    "shipper_mp": "JNE CASHLESS TRUCKING",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "JNE",
+    "shipper_mp": "JNE PICK UP",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "JNE",
+    "shipper_mp": "JNE COD",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "JNE",
+    "shipper_mp": "JNE CARGO",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "JNE",
+    "shipper_mp": "JNE YES",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "JNE",
+    "shipper_mp": "JNE_Darat",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "JNE",
+    "shipper_mp": "JNE_COD_Trucking",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "JNE",
+    "shipper_mp": "JNE CASHLESS TRUCKING",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "GRAB EXPRESS",
+    "shipper_mp": "GRAB Sameday",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "GRAB EXPRESS",
+    "shipper_mp": "Grab Instant",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "GRAB EXPRESS",
+    "shipper_mp": "2 Jam Sampai GR",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "GRAB EXPRESS",
+    "shipper_mp": "GRAB INSTANT 2HD",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "GOSEND",
+    "shipper_mp": "GOSEND Instant",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "GOSEND",
+    "shipper_mp": "GOSEND Sameday",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "GOSEND",
+    "shipper_mp": "2 Jam Sampai GS",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "GOSEND",
+    "shipper_mp": "GOSEND INSTANT 2HD",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "ANTERAJA",
+    "shipper_mp": "ANTERAJA Sameday",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "ANTERAJA",
+    "shipper_mp": "ANTERAJA Regular",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "SICEPAT",
+    "shipper_mp": "SICEPAT CASHLESS",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "SICEPAT",
+    "shipper_mp": "SICEPAT DG",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "SICEPAT",
+    "shipper_mp": "SICEPAT",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "BES",
+    "shipper_mp": "BES Regular",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "BES",
+    "shipper_mp": "BES-Express",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "BES",
+    "shipper_mp": "BES-SD",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "BES",
+    "shipper_mp": "BES-COD",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "BES",
+    "shipper_mp": "BES TRUCKING",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "BES",
+    "shipper_mp": "BES TMS Scheduled Delivery Regular",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "BES",
+    "shipper_mp": "BES COD Trucking",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "BOPIS",
+    "shipper_mp": "BOPIS",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "NINJA EXPRESS",
+    "shipper_mp": "Ninja Trucking",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "NINJA EXPRESS",
+    "shipper_mp": "Ninja Regular",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "INDAH",
+    "shipper_mp": "Indah Trucking",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "KURIR SELLER",
+    "shipper_mp": "Dikirim oleh Seller",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "RARA",
+    "shipper_mp": "RARA SAMEDAY",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "BERES",
+    "shipper_mp": "Beres",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "MEX",
+    "shipper_mp": "MEX Regular",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "KERRY",
+    "shipper_mp": "KERRY TRUCKING",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "ID Express",
+    "shipper_mp": "ID Express",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "PAXEL",
+    "shipper_mp": "PAXEL",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "PAXEL",
+    "shipper_mp": "PAXEL SD",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "SAP",
+    "shipper_mp": "SAP LAND",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "ALFATREX",
+    "shipper_mp": "ALFATREX REGULAR",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "FIRST LOGISTIC",
+    "shipper_mp": "FL Regular",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "NSS EXPRESS",
+    "shipper_mp": "NSS XPRESS",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "blibli",
+    "shipper_internal": "IDL",
+    "shipper_mp": "IDL REG",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "tokopedia",
+    "shipper_internal": "JNE",
+    "shipper_mp": "JNE Reguler",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "tokopedia",
+    "shipper_internal": "JNE",
+    "shipper_mp": "JNE OKE",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "tokopedia",
+    "shipper_internal": "JNE",
+    "shipper_mp": "JNE JNE Trucking",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "tokopedia",
+    "shipper_internal": "JNE",
+    "shipper_mp": "JNE YES",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "tokopedia",
+    "shipper_internal": "GRAB EXPRESS",
+    "shipper_mp": "GrabExpress Same Day",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "tokopedia",
+    "shipper_internal": "GRAB EXPRESS",
+    "shipper_mp": "GrabExpress Instant",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "tokopedia",
+    "shipper_internal": "GOSEND",
+    "shipper_mp": "GoSend Instant Courier",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "tokopedia",
+    "shipper_internal": "GOSEND",
+    "shipper_mp": "GoSend Same Day",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "tokopedia",
+    "shipper_internal": "ANTERAJA",
+    "shipper_mp": "AnterAja Reguler",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "tokopedia",
+    "shipper_internal": "ANTERAJA",
+    "shipper_mp": "AnterAja Next Day",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "tokopedia",
+    "shipper_internal": "ANTERAJA",
+    "shipper_mp": "AnterAja Same Day",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "tokopedia",
+    "shipper_internal": "ANTERAJA",
+    "shipper_mp": "AnterAja Economy",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "tokopedia",
+    "shipper_internal": "ANTERAJA",
+    "shipper_mp": "AnterAja Cargo",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "tokopedia",
+    "shipper_internal": "SICEPAT",
+    "shipper_mp": "SiCepat Regular Package",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "tokopedia",
+    "shipper_internal": "SICEPAT",
+    "shipper_mp": "SiCepat HALU",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "tokopedia",
+    "shipper_internal": "SICEPAT",
+    "shipper_mp": "SiCepat BEST",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "tokopedia",
+    "shipper_internal": "SICEPAT",
+    "shipper_mp": "SiCepat GOKIL",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "tokopedia",
+    "shipper_internal": "NINJA EXPRESS",
+    "shipper_mp": "Ninja Xpress Reguler",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "tokopedia",
+    "shipper_internal": "KURIR SELLER",
+    "shipper_mp": "Custom Logistik Service Normal",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "tokopedia",
+    "shipper_internal": "PAXEL",
+    "shipper_mp": "Paxel Next Day",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "tokopedia",
+    "shipper_internal": "TIKI",
+    "shipper_mp": "TIKI Reguler",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "tokopedia",
+    "shipper_internal": "TIKI",
+    "shipper_mp": "TIKI Over Night Service",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "tokopedia",
+    "shipper_internal": "J&T",
+    "shipper_mp": "J&T Reguler",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "tokopedia",
+    "shipper_internal": "J&T",
+    "shipper_mp": "J&amp;T Reguler",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "shopee",
+    "shipper_internal": "JNE",
+    "shipper_mp": "JNE Reguler",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "shopee",
+    "shipper_internal": "JNE",
+    "shipper_mp": "JNE Trucking (JTR)",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "shopee",
+    "shipper_internal": "JNE",
+    "shipper_mp": "JNE YES",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "shopee",
+    "shipper_internal": "GRAB EXPRESS",
+    "shipper_mp": "GrabExpress Instant",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "shopee",
+    "shipper_internal": "GRAB EXPRESS",
+    "shipper_mp": "GrabExpress Sameday",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "shopee",
+    "shipper_internal": "GOSEND",
+    "shipper_mp": "GoSend Instant",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "shopee",
+    "shipper_internal": "GOSEND",
+    "shipper_mp": "GoSend Same Day",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "shopee",
+    "shipper_internal": "ANTERAJA",
+    "shipper_mp": "Anteraja",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "shopee",
+    "shipper_internal": "ANTERAJA",
+    "shipper_mp": "PakEkoAja (Anteraja Economy)",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "shopee",
+    "shipper_internal": "SICEPAT",
+    "shipper_mp": "SiCepat Halu",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "shopee",
+    "shipper_internal": "SICEPAT",
+    "shipper_mp": "SiCepat REG",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "shopee",
+    "shipper_internal": "SICEPAT",
+    "shipper_mp": "Sicepat Gokil",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "shopee",
+    "shipper_internal": "NINJA EXPRESS",
+    "shipper_mp": "Ninja Xpress",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "shopee",
+    "shipper_internal": "ID EXPRESS",
+    "shipper_mp": "ID Express",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "shopee",
+    "shipper_internal": "J&T",
+    "shipper_mp": "J&T Express",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "shopee",
+    "shipper_internal": "J&T",
+    "shipper_mp": "J&T Jemari",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "shopee",
+    "shipper_internal": "J&T",
+    "shipper_mp": "J&T Economy",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "shopee",
+    "shipper_internal": "SHOPEE",
+    "shipper_mp": "Shopee Express Standard",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "shopee",
+    "shipper_internal": "SHOPEE",
+    "shipper_mp": "Shopee Express Hemat",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "shopee",
+    "shipper_internal": "SHOPEE",
+    "shipper_mp": "Shopee Express Instant",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "lazada",
+    "shipper_internal": "JNE",
+    "shipper_mp": "JNE MP",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "lazada",
+    "shipper_internal": "JNE",
+    "shipper_mp": "JNE JTR",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "lazada",
+    "shipper_internal": "GRAB EXPRESS",
+    "shipper_mp": "Grab-ID",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "lazada",
+    "shipper_internal": "SICEPAT",
+    "shipper_mp": "SICEPAT MP",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "lazada",
+    "shipper_internal": "NINJA EXPRESS",
+    "shipper_mp": "Ninja Van MP",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "lazada",
+    "shipper_internal": "NINJA EXPRESS",
+    "shipper_mp": "Ninja Van NDS MP",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "lazada",
+    "shipper_internal": "LEX",
+    "shipper_mp": "LEX ID",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "lazada",
+    "shipper_internal": "LEX",
+    "shipper_mp": "LEX",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "bukalapak",
+    "shipper_internal": "JNE",
+    "shipper_mp": "JNE REG",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "bukalapak",
+    "shipper_internal": "JNE",
+    "shipper_mp": "JNE YES",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "bukalapak",
+    "shipper_internal": "JNE",
+    "shipper_mp": "JNE Trucking",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "bukalapak",
+    "shipper_internal": "GRAB EXPRESS",
+    "shipper_mp": "Grab Same Day",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "bukalapak",
+    "shipper_internal": "GRAB EXPRESS",
+    "shipper_mp": "Grab Instant",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "bukalapak",
+    "shipper_internal": "GOSEND",
+    "shipper_mp": "GO-SEND Instant",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "bukalapak",
+    "shipper_internal": "GOSEND",
+    "shipper_mp": "GO-SEND Same Day",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "bukalapak",
+    "shipper_internal": "ANTERAJA",
+    "shipper_mp": "Anteraja REG",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "bukalapak",
+    "shipper_internal": "ANTERAJA",
+    "shipper_mp": "Anteraja Next Day",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "bukalapak",
+    "shipper_internal": "SICEPAT",
+    "shipper_mp": "SiCepat REG",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "bukalapak",
+    "shipper_internal": "SICEPAT",
+    "shipper_mp": "SiCepat BEST",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "bukalapak",
+    "shipper_internal": "SICEPAT",
+    "shipper_mp": "SiCepat HALU",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "bukalapak",
+    "shipper_internal": "NINJA EXPRESS",
+    "shipper_mp": "NINJA REG",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "bukalapak",
+    "shipper_internal": "KURIR SELLER",
+    "shipper_mp": "Kurir Lapak",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "bukalapak",
+    "shipper_internal": "TIKI",
+    "shipper_mp": "TIKI Reg",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "bukalapak",
+    "shipper_internal": "J&T",
+    "shipper_mp": "J&T REG",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "bukalapak",
+    "shipper_internal": "LION PARCEL",
+    "shipper_mp": "Lion Parcel ONEPACK",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "jdid",
+    "shipper_internal": "JNE",
+    "shipper_mp": "JNE  Online Booking Cashless",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "jdid",
+    "shipper_internal": "JNE",
+    "shipper_mp": "JNE Drop Off Non Online Booking",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "jdid",
+    "shipper_internal": "JX",
+    "shipper_mp": "JX",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "jdid",
+    "shipper_internal": "JANIO ASIA",
+    "shipper_mp": "Janio Asia",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "zalora",
+    "shipper_internal": "JNE",
+    "shipper_mp": "JNE - CASHLESS",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "zalora",
+    "shipper_internal": "JNE",
+    "shipper_mp": "JNE - MARKETPLACE",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "zalora",
+    "shipper_internal": "JNE",
+    "shipper_mp": "JNE - MPDO",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "zalora",
+    "shipper_internal": "SICEPAT",
+    "shipper_mp": "SICEPAT - MARKETPLACE",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "zalora",
+    "shipper_internal": "SAP",
+    "shipper_mp": "SAP - MARKETPLACE",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  },
+  {
+    "mp": "zalora",
+    "shipper_internal": "RPX",
+    "shipper_mp": "RPX - MARKETPLACE",
+    "notes": "",
+    "created_at": "1/1/2000 00:00:00"
+  }
+]

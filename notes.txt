@@ -1,0 +1,14 @@
+npm i -g mup mup-node
+
+$ eval $(ssh-agent)
+$ ssh-add firdaus@gcp.pem
+$ ssh-add itdept@gcp.pem
+
+u:it.dept
+p:itdept321
+
+in Server:
+sudo chmod 666 /var/run/docker.sock
+
+mup node setup
+mup node deploy
