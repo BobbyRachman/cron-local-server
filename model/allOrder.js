@@ -206,6 +206,22 @@ let AllOrder = new Schema({
     },
     updatedAt : {
         type : Date
+    },
+    uploadStatus : {
+        type : Boolean,
+        default : false
+    },
+    uploadDataAt : {
+        type : Date,
+        default : Date.now
+    },
+    uploadCompletedStatus : {
+        type : Boolean,
+        default : false
+    },
+    uploadCompletedAt : {
+        type : Date,
+        default : Date.now
     }
 })
 

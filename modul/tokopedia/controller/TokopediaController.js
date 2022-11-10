@@ -163,7 +163,7 @@ module.exports = cron.schedule('*/5 * * * *',async ()=>{
                 let invoice_no = dataOrder.invoice_no;
                 let CheckAllOrders = await AllOrder.find({ $and : [{"order_id" : order_id}, {"invoice_no" : invoice_no}] });
                 if(CheckAllOrders.length > 0){
-                  let UpdateAllOrder = await AllOrder.findOneAndUpdate({ $and : [{"order_id" : order_id}, {"invoice_no" : invoice_no}] },dataOrder)
+                  // let UpdateAllOrder = await AllOrder.findOneAndUpdate({ $and : [{"order_id" : order_id}, {"invoice_no" : invoice_no}] },dataOrder)
                 } else {
                   let InsertAllOrder = await AllOrder.create(dataOrder)
                 }

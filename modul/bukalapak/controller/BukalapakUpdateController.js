@@ -52,7 +52,7 @@ function makeRequest(path) {
 
 const sleep = (delay) => new Promise((resolve)=>setTimeout(resolve,delay))
 
-module.exports = cron.schedule('*/14 * * * *',async ()=>{
+module.exports = cron.schedule('0 * * * *',async ()=>{
     try {
         console.log("Bukalapak Update Start")
         let shops = await Marketplace.find({"sts" : 1,"fk_channel" : 13});
