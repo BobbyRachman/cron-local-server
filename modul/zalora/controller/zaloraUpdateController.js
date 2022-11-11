@@ -49,7 +49,7 @@ function makeRequest(path) {
   });
 }
 
-module.exports = cron.schedule('*/35 * * * *',async ()=>{
+module.exports = cron.schedule('*/30 * * * *',async ()=>{
     try {
         console.log("Zalora Update Start")
 

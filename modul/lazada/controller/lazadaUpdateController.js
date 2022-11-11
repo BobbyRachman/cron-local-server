@@ -55,7 +55,7 @@ function makeRequest(path) {
   });
 }
 
-module.exports = cron.schedule('*/17 * * * *',async ()=>{
+module.exports = cron.schedule('*/30 * * * *',async ()=>{
     try {
         console.log("Lazada Update Start")
         let shops = await Marketplace.find({"sts" : 1,"fk_channel" : 18});
