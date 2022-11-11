@@ -23,40 +23,40 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // app.use('/', AppRouter)
 
-// Execution Cron
+// // Execution Cron
 
-// // Cron for Get Data
+// // // Cron for Get Data
 
-var BukalapakCron = require('./modul/bukalapak/controller/BukalapakController')
-var TokopediaCron = require('./modul/tokopedia/controller/TokopediaController')
-var ShopeeCron = require('./modul/shopee/controller/shopeeController')
-var LazadaCron = require('./modul/lazada/controller/lazadaController')
-var JdidCron = require('./modul/jdid/controller/jdidController')
-var BlibliCron = require('./modul/blibli/controller/blibliController')
-var ZaloraCron = require('./modul/zalora/controller/zaloraController')
-var tiktokCron = require('./modul/tiktok/controller/tiktokController')
+// var BukalapakCron = require('./modul/bukalapak/controller/BukalapakController')
+// var TokopediaCron = require('./modul/tokopedia/controller/TokopediaController')
+// var ShopeeCron = require('./modul/shopee/controller/shopeeController')
+// var LazadaCron = require('./modul/lazada/controller/lazadaController')
+// var JdidCron = require('./modul/jdid/controller/jdidController')
+// var BlibliCron = require('./modul/blibli/controller/blibliController')
+// var ZaloraCron = require('./modul/zalora/controller/zaloraController')
+// var tiktokCron = require('./modul/tiktok/controller/tiktokController')
 
-// // Cron for Update Mechanism
+// // // Cron for Update Mechanism
 
-var BukalapakUpdateCron = require('./modul/bukalapak/controller/BukalapakUpdateController')
-var TokopediaUpdateCron = require('./modul/tokopedia/controller/TokopediaUpdateController')
-var ShopeeUpdateCron = require('./modul/shopee/controller/shopeeUpdateController')
-var LazadaUpdateCron = require('./modul/lazada/controller/lazadaUpdateController')
-var JdidUpdateCron = require('./modul/jdid/controller/jdidUpdateController')
-var BlibliUpdateCron = require('./modul/blibli/controller/blibliUpdateController')
-var ZaloraUpdateCron = require('./modul/zalora/controller/zaloraUpdateController')
-var tiktokUpdateCron = require('./modul/tiktok/controller/tiktokUpdateController')
+// var BukalapakUpdateCron = require('./modul/bukalapak/controller/BukalapakUpdateController')
+// var TokopediaUpdateCron = require('./modul/tokopedia/controller/TokopediaUpdateController')
+// var ShopeeUpdateCron = require('./modul/shopee/controller/shopeeUpdateController')
+// var LazadaUpdateCron = require('./modul/lazada/controller/lazadaUpdateController')
+// var JdidUpdateCron = require('./modul/jdid/controller/jdidUpdateController')
+// var BlibliUpdateCron = require('./modul/blibli/controller/blibliUpdateController')
+// var ZaloraUpdateCron = require('./modul/zalora/controller/zaloraUpdateController')
+// var tiktokUpdateCron = require('./modul/tiktok/controller/tiktokUpdateController')
 
-// // // Update Upload Local Server
-// // let updateOrderCron = require('./modul/updateOrder/controller/updateControllers')
+// Update Upload Local Server
+let updateOrderCron = require('./modul/updateOrder/controller/updateControllers')
 
-// Cron 1 Local Server
-let Bukalapak1Cron = require("./modul/bukalapak/controller/bukalapak1Controller");
-let Tokopedia1Cron = require("./modul/tokopedia/controller/tokopedia1Controller");
-let shopee1Cron = require("./modul/shopee/controller/shopee1Controller");
-let lazada1Cron = require("./modul/lazada/controller/lazada1Controller");
-let blibli1Cron = require("./modul/blibli/controller/blibli1Controller");
-let zalora1Cron = require("./modul/zalora/controller/zalora1Controller")
+// // Cron 1 Local Server
+// let Bukalapak1Cron = require("./modul/bukalapak/controller/bukalapak1Controller");
+// let Tokopedia1Cron = require("./modul/tokopedia/controller/tokopedia1Controller");
+// let shopee1Cron = require("./modul/shopee/controller/shopee1Controller");
+// let lazada1Cron = require("./modul/lazada/controller/lazada1Controller");
+// let blibli1Cron = require("./modul/blibli/controller/blibli1Controller");
+// let zalora1Cron = require("./modul/zalora/controller/zalora1Controller")
 
 // // catch 404 and forward to error handler
 
