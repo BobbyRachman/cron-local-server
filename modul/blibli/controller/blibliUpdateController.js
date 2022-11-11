@@ -53,7 +53,7 @@ function makeRequest(path) {
     });
 }
 
-module.exports = cron.schedule('*/22 * * * *', async ()=>{
+module.exports = cron.schedule('*/30 * * * *', async ()=>{
     try {
         console.log("Blibli Update Start")
         let shops = await Marketplace.find({"sts" : 1,"fk_channel" : 16});

@@ -53,7 +53,7 @@ function makeRequest(path) {
 
 const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 
-module.exports = cron.schedule('0 * * * *', async() => {
+module.exports = cron.schedule('*/30 * * * *', async() => {
     try {
         console.log("Tiktok Update Start")
         let shops = await Marketplace.find({ "sts": "1", "fk_channel": "29" });
