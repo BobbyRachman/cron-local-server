@@ -207,21 +207,23 @@ let AllOrder = new Schema({
     updatedAt : {
         type : Date
     },
+    createdOnLocalAt : {
+        type : Date,
+        default : Date.now
+    },
     uploadStatus : {
         type : Boolean,
         default : false
     },
     uploadDataAt : {
-        type : Date,
-        default : Date.now
+        type : Date
     },
     uploadCompletedStatus : {
         type : Boolean,
         default : false
     },
     uploadCompletedAt : {
-        type : Date,
-        default : Date.now
+        type : Date
     }
 })
 
