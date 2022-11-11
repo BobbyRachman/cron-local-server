@@ -50,7 +50,7 @@ function makeRequest(path) {
     });
 }
 
-module.exports = cron.schedule('*/20 * * * *', async () => {
+module.exports = cron.schedule('*/10 * * * *', async () => {
     try {
         console.log("Zalora 1 Start");
         let curr = new Date();

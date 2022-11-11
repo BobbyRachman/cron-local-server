@@ -50,7 +50,7 @@ function makeRequest(path) {
     });
 }
 
-module.exports = cron.schedule('*/5 * * * *', async () => {
+module.exports = cron.schedule('*/10 * * * *', async () => {
     try {
         console.log("Bukalapak Start");
         let curr = new Date();
