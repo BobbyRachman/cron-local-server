@@ -11,7 +11,7 @@ var ShipperInternal = require('../../../model/shipperInternal');
 var InternalStatus = require('../../../model/internalStatus');
 var CronErrorLog = require('../../../model/cronErrorLog');
 var AllOrder = require('../../../model/allOrder');
-var zaloraCronLog = require('../model/zaloraCron');
+var tokopediaCronLog = require('../model/tokopediaCron');
 
 moment.tz.setDefault("Asia/Jakarta");
 
@@ -50,19 +50,20 @@ function makeRequest(path) {
     });
 }
 
-module.exports = cron.schedule('*/10 * * * *', async () => {
+module.exports = cron.schedule('*/15 * * * *', async () => {
     try {
-        console.log("Zalora 1 Start");
+        console.log("Tokopedia 2 Start");
+
         let curr = new Date();
-        let dateNow = moment(curr).format('YYYY-MM-DD');
+        let dateNow = moment(curr).add("-1","days").format('YYYY-MM-DD');
         // let dateYesterday = moment(dateNow).add(-1, 'days').format('YYYY-MM-DD');
         let start_date = dateNow + ' 00:00:00';
         let end_date = dateNow + ' 23:59:59';
         let sd = moment(start_date).format('YYYY-MM-DD HH:mm:ss');
         let ed = moment(end_date).format('YYYY-MM-DD HH:mm:ss');
-        // Get Bukalapak's Shops from DB
-        let shops = await Marketplace.aggregate([{ $lookup: { from: "categorieMp", localField: "fk_brand", foreignField: "rowid", as: "detail_brand" } }, { $match: { 'fk_channel': '27', 'sts': '1' } }]);
-        let marketplaceId = "zalora";
+        let shops = await Marketplace.aggregate([{ $lookup: { from: "categorieMp", localField: "fk_brand", foreignField: "rowid", as: "detail_brand" } }, { $match: { 'fk_channel': '12', 'sts': '1' } }]);
+        let marketplaceId = "tokopedia";
+
         for (let shop of shops) {
             try {
                 let brand_name = shop.brand;
@@ -71,6 +72,7 @@ module.exports = cron.schedule('*/10 * * * *', async () => {
                 let status_fulfillment = shop.detail_brand[0].status_fulfillment;
                 let offset = 0;
                 let limit = 100;
+
 
                 // Get Start Date and End Date from Alghoritm
                 let startDate = moment(sd).toISOString();
@@ -83,10 +85,11 @@ module.exports = cron.schedule('*/10 * * * *', async () => {
                 let reqAllOrder = await makeRequest(endpoint);
                 let nTransaction1 = 0;
                 let dataAllOrder = reqAllOrder.data;
-
                 let cres = 1;
                 while (cres > 0) {
-                    console.log(endpoint)
+
+                    console.log(endpoint);
+
                     for (let data of dataAllOrder) {
                         nTransaction1++
                         let dataOrder = data;
@@ -106,12 +109,14 @@ module.exports = cron.schedule('*/10 * * * *', async () => {
 
                 };
 
+
             } catch (error) {
                 console.log(error)
             }
         }
 
-        console.log("Zalora 1 End")
+
+        console.log("Tokopedia 2 End")
 
     } catch (error) {
         console.log(error.message)

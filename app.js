@@ -49,6 +49,7 @@ var tiktokUpdateCron = require('./modul/tiktok/controller/tiktokUpdateController
 
 // // // Update Upload Local Server
 // // let updateOrderCron = require('./modul/updateOrder/controller/updateControllers')
+// let updateCompletedAt = require("./modul/updateOrder/controller/updateCompletedAt")
 
 // Cron 1 Local Server
 let Bukalapak1Cron = require("./modul/bukalapak/controller/bukalapak1Controller");
@@ -57,6 +58,14 @@ let shopee1Cron = require("./modul/shopee/controller/shopee1Controller");
 let lazada1Cron = require("./modul/lazada/controller/lazada1Controller");
 let blibli1Cron = require("./modul/blibli/controller/blibli1Controller");
 let zalora1Cron = require("./modul/zalora/controller/zalora1Controller")
+
+// Cron 2 Local Server
+let Bukalapak2Cron = require("./modul/bukalapak/controller/bukalapak2Controller");
+let Tokopedia2Cron = require("./modul/tokopedia/controller/tokopedia2Controller");
+let shopee2Cron = require("./modul/shopee/controller/shopee2Controller");
+let lazada2Cron = require("./modul/lazada/controller/lazada2Controller");
+let blibli2Cron = require("./modul/blibli/controller/blibli2Controller");
+let zalora2Cron = require("./modul/zalora/controller/zalora2Controller")
 
 // // catch 404 and forward to error handler
 
