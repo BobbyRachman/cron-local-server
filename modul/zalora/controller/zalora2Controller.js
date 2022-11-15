@@ -50,11 +50,11 @@ function makeRequest(path) {
     });
 }
 
-module.exports = cron.schedule('*/10 * * * *', async () => {
+module.exports = cron.schedule('*/15 * * * *', async () => {
     try {
-        console.log("Zalora 1 Start");
+        console.log("Zalora 2 Start");
         let curr = new Date();
-        let dateNow = moment(curr).format('YYYY-MM-DD');
+        let dateNow = moment(curr).add("-1","days").format('YYYY-MM-DD');
         // let dateYesterday = moment(dateNow).add(-1, 'days').format('YYYY-MM-DD');
         let start_date = dateNow + ' 00:00:00';
         let end_date = dateNow + ' 23:59:59';
@@ -86,7 +86,7 @@ module.exports = cron.schedule('*/10 * * * *', async () => {
 
                 let cres = 1;
                 while (cres > 0) {
-                    console.log(endpoint)
+                    console.log(endpoint);
                     for (let data of dataAllOrder) {
                         nTransaction1++
                         let dataOrder = data;
@@ -111,7 +111,7 @@ module.exports = cron.schedule('*/10 * * * *', async () => {
             }
         }
 
-        console.log("Zalora 1 End")
+        console.log("Zalora 2 End")
 
     } catch (error) {
         console.log(error.message)

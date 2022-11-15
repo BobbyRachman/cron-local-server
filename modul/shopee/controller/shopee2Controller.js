@@ -1,20 +1,26 @@
-var express = require('express')
-var con = require('../../../config/db')
-var request = require('request')
-var axios = require('axios')
-var moment = require('moment')
-var cron = require('node-cron')
-var SqlQuery = require('../../helper/Query')
-
+var express = require('express');
+var request = require('request');
+var axios = require('axios');
+var https = require('https');
+var moment = require('moment');
+var cron = require('node-cron');
 var Marketplace = require('../../../model/marketplace');
+var ShopeeOrder = require('../model/shopeeModel');
+var ShopeeCronLog = require('../model/shopeeCron');
 var ShipperInternal = require('../../../model/shipperInternal');
 var InternalStatus = require('../../../model/internalStatus');
 var CronErrorLog = require('../../../model/cronErrorLog');
 var AllOrder = require('../../../model/allOrder');
-var zaloraCronLog = require('../model/zaloraCron');
+var transporterMail = require('../../helper/transporter');
+var skeleton = require('../../helper/skeleton');
 
 moment.tz.setDefault("Asia/Jakarta");
 
+const agent = new https.Agent({
+    rejectUnauthorized: false
+})
+
+// Function for escape Html to save on db
 function escapeHtml(text) {
     return text
         .replace(/&/g, "&amp;")
@@ -24,10 +30,12 @@ function escapeHtml(text) {
         .replace(/'/g, "&#039;");
 }
 
+// Function for add slashes
 function addslashes(str) {
     return (str + '').replace(/([\\"'])/g, "\\$1").replace(/\0/g, "\\0");
 }
 
+// Function for cleaning string data
 function clean(data) {
     data = data.trim()
     data = data.replace(/\\/g, '')
@@ -36,9 +44,10 @@ function clean(data) {
     return data
 }
 
+// Function to get request data using Axios
 function makeRequest(path) {
     return new Promise(function (resolve, reject) {
-        axios.get(path).then(
+        axios.get(path, { httpsAgent: agent }).then(
             (response) => {
                 var result = response.data;
                 resolve(result);
@@ -50,19 +59,20 @@ function makeRequest(path) {
     });
 }
 
-module.exports = cron.schedule('*/10 * * * *', async () => {
+module.exports = cron.schedule('*/15 * * * *', async () => {
     try {
-        console.log("Zalora 1 Start");
+        console.log("Shopee 2 Start")
         let curr = new Date();
-        let dateNow = moment(curr).format('YYYY-MM-DD');
+        let dateNow = moment(curr).add("-1","days").format('YYYY-MM-DD');
         // let dateYesterday = moment(dateNow).add(-1, 'days').format('YYYY-MM-DD');
         let start_date = dateNow + ' 00:00:00';
         let end_date = dateNow + ' 23:59:59';
+
         let sd = moment(start_date).format('YYYY-MM-DD HH:mm:ss');
         let ed = moment(end_date).format('YYYY-MM-DD HH:mm:ss');
-        // Get Bukalapak's Shops from DB
-        let shops = await Marketplace.aggregate([{ $lookup: { from: "categorieMp", localField: "fk_brand", foreignField: "rowid", as: "detail_brand" } }, { $match: { 'fk_channel': '27', 'sts': '1' } }]);
-        let marketplaceId = "zalora";
+        let shops = await Marketplace.aggregate([{ $lookup: { from: "categorieMp", localField: "fk_brand", foreignField: "rowid", as: "detail_brand" } }, { $match: { 'fk_channel': '14', 'sts': '1' } }]);
+        let marketplaceId = "shopee";
+
         for (let shop of shops) {
             try {
                 let brand_name = shop.brand;
@@ -111,9 +121,8 @@ module.exports = cron.schedule('*/10 * * * *', async () => {
             }
         }
 
-        console.log("Zalora 1 End")
-
+        console.log("Shopee 2 End")
     } catch (error) {
-        console.log(error.message)
+        console.log(error)
     }
 })

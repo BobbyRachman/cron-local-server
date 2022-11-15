@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const { Schema } = mongoose
 
-let AllOrder = new Schema({
+let allOrdersMeteorModel = new Schema({
     store_id : {
         type : String
     },
@@ -231,13 +231,6 @@ let AllOrder = new Schema({
     uploadCompletedAt : {
         type : Date
     }
-})
+});
 
-AllOrder.index({
-    order_id : 1,
-    invoice_no : 1
-},{
-    unique : true
-})
-
-module.exports = mongoose.model('AllOrder',AllOrder,'allOrders');
+module.exports = mongoose.model('allOrdersMeteorModel',allOrdersMeteorModel,'allOrderMeteor');
