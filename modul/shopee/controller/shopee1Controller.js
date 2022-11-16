@@ -65,7 +65,8 @@ module.exports = cron.schedule('*/10 * * * *', async () => {
         let curr = new Date();
         let dateNow = moment(curr).format('YYYY-MM-DD');
         // let dateYesterday = moment(dateNow).add(-1, 'days').format('YYYY-MM-DD');
-        let start_date = dateNow + ' 00:00:00';
+        // let start_date = dateNow + ' 00:00:00';
+        let start_date = "2022-11-11" + ' 12:00:00';
         let end_date = dateNow + ' 23:59:59';
         let sd = moment(start_date).format('YYYY-MM-DD HH:mm:ss');
         let ed = moment(end_date).format('YYYY-MM-DD HH:mm:ss');

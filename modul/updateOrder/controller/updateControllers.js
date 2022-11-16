@@ -49,16 +49,16 @@ function makeRequest(path) {
   });
 }
 
-module.exports = cron.schedule('0 21 * * *',async ()=>{
+module.exports = cron.schedule('5 19 * * *',async ()=>{
     try {
-        let startDate = new Date("2022-11-07T16:59:59.000Z");
+        let startDate = new Date("2022-11-09T17:00:00.000Z");
         let endDate = new Date();
 
         let getDataOrderLocal = await AllOrder.find({$and : [
             {"create_date" : {$gte : startDate}},
             {"create_date" : {$lte : endDate}},
             {"validasi1status" : true},
-            {"uploadCompletedStatus" : false}
+            {"uploadCompletedStatus" : {$ne : true}}
         ]});
 
         let dataSend = {
